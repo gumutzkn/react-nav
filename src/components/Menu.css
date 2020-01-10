@@ -1,0 +1,27 @@
+.menu {
+  position: absolute;
+  z-index: 998;
+  background: #fff;
+  left: -50%;
+  top: 0;
+  height: 100%;
+  width: 30%;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 300ms left cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.menu.active {
+  left: 0%;
+}
+
+.menu a {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  display: block;
+  color: #005c9c;
+}
